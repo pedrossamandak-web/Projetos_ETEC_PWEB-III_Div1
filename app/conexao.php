@@ -1,7 +1,7 @@
 <?php
 class Conexao
 {
-    private static $dbname = "lanchonete2";
+    private static $dbname = "lanchonete";
     private static $host = "127.0.0.1";
     private static $user = "root";
     private static $pass = "";
