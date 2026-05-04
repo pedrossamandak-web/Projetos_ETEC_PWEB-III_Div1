@@ -9,12 +9,13 @@ $json = filter_input(INPUT_GET, 'jsn');
 */
 $data = json_decode($json, true);
 /*{"op":"sp","id":"1","nome":"RICARDO DA SILVA ZANATA","usuario":"RICK'S","senha":"123456","logado":"TRUE"}*/
-$op = $data['op'];
-$id = $data['id'];
-$nome = $data['nome'];
-$usuario = $data['usuario'];
-$senha = $data['senha'];
-$logado = $data['logado'];
+/* Operador de Coalescência Nula (??) -  ?? ''*/
+$op = $data['op'] ?? '';
+$id = $data['id'] ?? '';
+$nome = $data['nome'] ?? '';
+$usuario = $data['usuario'] ?? '';
+$senha = $data['senha'] ?? '';
+$logado = $data['logado'] ?? '';
 
 switch ($op) {
     case 'i':
