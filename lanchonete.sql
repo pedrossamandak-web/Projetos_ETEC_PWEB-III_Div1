@@ -15,3 +15,8 @@ VALUE
 ('ALFREDO ALEXANDRE DE OLIVEIRA','XANDAO',MD5(234567)),
 ('JOÃO LUIS CHAGAS SANCHES','JOHNNY',MD5(345678)),
 ('RICARDO AMORIM','AMORIM',MD5(456789));
+
+create table Categorias(
+	CatId int PRIMARY key AUTO_INCREMENT,
+    CatNome Varchar(100),
+    CatAtivo Boolean default 1);
